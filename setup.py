@@ -16,11 +16,11 @@ else:
     print(setuptools.find_packages())
 
     setuptools.setup(name='SynthSeg',
-                     version='2.0',
+                     version='2.1',
                      license='Apache 2.0',
                      description='Domain-agnostic segmentation of brain scans',
                      author='Benjamin Billot',
-                     url='https://github.com/BBillot/SynthSeg',
+                     url='https://github.com/annndrey/SynthSeg',
                      keywords=['segmentation', 'domain-agnostic', 'brain'],
                      packages=setuptools.find_packages(),
                      python_requires='>=3.6',
