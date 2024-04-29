@@ -7,7 +7,7 @@ contourpy==1.0.7
 cycler==0.11.0
 fonttools==4.39.2
 gast==0.3.3
-google-auth>=1.35.0
+google-auth==2.22.0
 google-auth-oauthlib>=0.4.6
 google-pasta==0.2.0
 grpcio==1.51.3
