@@ -2,6 +2,7 @@
 
 import sys
 import setuptools
+import platform
 
 python_version = sys.version[:3]
 
@@ -12,8 +13,10 @@ else:
 
     with open('requirements_python' + python_version + '.txt') as f:
         required_packages = [line.strip() for line in f.readlines()]
-
-    print(setuptools.find_packages())
+    if platform.system() == "Darwin":
+        required_packages.append("tensorflow-macos==2.16.1")
+    else:
+        required_packages.append("tensorflow-gpu==2.2.0"
 
     setuptools.setup(name='SynthSeg',
                      version='2.1',
